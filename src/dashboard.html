@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #4CAF50, #2E7D32);
+            color: #fff;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+        nav {
+            margin-top: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            background: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 5px;
+            transition: background 0.3s, transform 0.2s;
+        }
+        nav a:hover {
+            background: #4CAF50;
+            transform: scale(1.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome, User!</h1>
+</header>
+<nav>
+    <a href="log-activity.html">Log Activity</a>
+    <a href="view-activity.html">View Activity</a>
+    <a href="logout.html">Logout</a>
+</nav>
+</body>
+</html>
